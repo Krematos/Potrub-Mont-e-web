@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+    font-family: "Poppins" , sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;    /* Plynulé scrollování po stránce */
+}
+
+
+h1, h2, h3, h4{
+    color: black;
+    font-weight: 600;
+}
+
+ul{
+    list-style: none;   /* Odstranění výchozích odrážek pro čistší vzhled menu */
+}
+
+a{    
+    text-decoration: none;  /* Odstranění podtržení u odkazů */
+}
+
+img{
+    display: block;     /* Zabránění mezerám pod obrázky */
+    max-width: 100%;
+    height: auto;       /* Zachování poměru stran */
+}
+
+.container{
+    padding-bottom: 6%;      /* Dolní odsazení pro vizuální prostor */
+}
+
+.container h2{
+    color: black;   /* Černý text pro nadpisy uvnitř kontejneru */
+}
+
+/* == POZADÍ STRÁNKY == */
+body{
+    background-image: url(images/brushed-steel-1175730.jpg);       /* Pozadí s texturou (ocelový vzhled) */
+}
+
+/* == FORMULÁŘ PRO REGISTRACI == */
+#registrationForm{    
+    margin: 50px 20% 80px 20%;  /* Vnější mezery: shora, po stranách, zdola */
+    height: 600px;  /* Výška formuláře */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;     /* Dvojité stínování pro moderní vzhled */
+    border-radius: 15px;    /* Zaoblení rohů */
+    background-color: whitesmoke;   /* Světlé pozadí pro kontrast s textem */
+    padding: 2%;    /* Vnitřní odsazení */
+}
+
+/* Nadpis formuláře */
+#registrationForm h2{
+     color: black;
+   }
+
+/* == Styl tlačítka == */
+.btn{
+    display: inline-flex;
+    background: #D2691E;    /* Hnědo-oranžová barva (podobná čokoládě) */
+    color: whitesmoke;      /* Světlý text pro kontrast */
+    font-weight: 600;
+    padding: 1rem 2rem;
+    transition: box-shadow .4s;
+    border-radius: 20px;    /* Zaoblení rohů */
+}
+
+/* Hover efekt – stín a barva tlačítka */
+.btn:hover{
+    box-shadow: 0 8px 32px #D2691E;
+    background: #D2691E;   
+}
+
+
+/* == TŘÍDA PRO ZOBRAZENÍ MOBILNÍ NABÍDKY == */
+.show-menu{
+    right: 0;
+}
+

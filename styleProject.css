@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+    font-family: "Poppins" , sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+h1, h2, h3, h4{
+    color: black;
+    font-weight: 600;
+}
+
+ul{
+    list-style: none;
+}
+
+a{    
+    text-decoration: none;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.imgs{
+    display: flex;   
+    
+}
+.card-img-top {        
+    padding: 3%;   
+    max-width: 33.33%; 
+    height: 350px;
+    width: 250px;
+    object-fit: cover;
+}
+
+/* == Sekce gallery == */
+
+.text-center{
+    margin-top: 50px;       /* Vzdálenost od horního okraje */
+    margin-bottom: 50px;    /* Vzdálenost od spodního okraje */
+}
+
+/* == GALERIE – GRID ROZLOŽENÍ == */
+.gallery {
+    display: grid;      /* Použití gridu pro uspořádání obrázků */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));     /* Automaticky přizpůsobuje počet sloupců podle šířky zařízení */
+    gap: 15px;      /* Mezera mezi obrázky */
+    max-width: 90%;         /* Max. šířka galerie */
+    max-height: 80%;        /* Max. výška galerie */
+    margin-left: 4%;        /* Odsazení zleva */
+    margin-bottom: 2%;      /* Spodní mezera pro vizuální vyváženost */      
+}
+
+/* == STYLIZACE OBRÁZKŮ V GALERII == */
+.gallery img {
+    width: 100%;        /* Obrázek vyplní celý sloupec */
+    height: 100%;       /* Výška obrázku se přizpůsobí */
+    display: block;     /* Zamezí nežádoucím mezerám pod obrázkem */
+    border-radius: 8px;         /* Zaoblené rohy obrázků */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);      /* Jemný stín pro hloubku */
+    transition: transform 0.2s ease-in-out;          /* Hladký přechod při hoveru */
+}
+
+/* == EFEKT PŘI NAJETÍ NA OBRÁZEK == */
+.gallery img:hover {
+    transform: scale(1.10);     /* Mírné zvětšení obrázku při přejetí myší */
+}

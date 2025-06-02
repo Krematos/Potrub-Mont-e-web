@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+}
+
+html{
+    scroll-behavior: smooth;    /* Plynulé scrollování po stránce */
+}
+
+
+h1, h2, h3, h4{
+    color: black;
+    font-weight: 600;
+}
+
+ul{
+    list-style: none;   /* Odstranění výchozích odrážek pro čistší vzhled menu */
+}
+
+a{    
+    text-decoration: none;  /* Odstranění podtržení u odkazů */
+}
+
+/* == Sekce About == */
+
+.about_container{
+    margin: 5%;
+    row-gap: 8rem;    
+}
+
+.section_subtitle{        
+    color: #D2691E;       
+}
+
+.about_data{
+    text-align: center;
+}
+
+.about_description{
+    margin-bottom: 4rem;
+}
+
+.about_list{    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;      
+}
+
+.about_list-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    height: 150px;
+    width: 250px;
+    border-radius: 15%;
+    margin: 50px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.ri-checkbox-circle-line{
+    margin-right: 8px;   
+}
+
+.button-around{
+    margin: 4%;
+}
+
+.section_title{
+    color: black;
+    margin: 2%;
+}
+
+.trubkaimage {
+    margin: 6%;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 1000px;
+}
+.about_text {
+    margin: 20px;
+}
+
+.about_text p {
+    margin: 0 0 10px; /* Odstup mezi odstavci */
+}
+
+.about_text h1 {
+    display: block; /* Zobrazení silného textu jako blok, aby začínal nový řádek */
+    margin-top: 20px; /* Odstup nad nadpisem */
+    color: black;
+    margin-left: 30px;
+}
+
+.about_text li{
+    margin: 0 0 10px;
+}
+
+.our_services{
+    margin-bottom: 3%;
+}
+

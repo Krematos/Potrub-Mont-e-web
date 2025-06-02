@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+    font-family: "Poppins" , sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;    /* Plynulé scrollování po stránce */
+}
+
+
+h1, h2, h3, h4{
+    color: black;
+    font-weight: 600;
+}
+
+ul{
+    list-style: none; /* Odstranění výchozích odrážek pro čistší vzhled menu */
+}
+
+a{    
+    text-decoration: none; /* Odstranění podtržení u odkazů */
+}
+
+img{
+    display: block;     /* Zabránění mezerám pod obrázky */
+    max-width: 100%;
+    height: auto;       /* Zachování poměru stran */
+}
+
+/* == Sekce header ==*/
+
+.header{
+    background-color: #000;    /* Černé pozadí */
+    padding: 10px 0;             /* Svislé odsazení */
+}
+
+/* Navigační panel */
+.nav{       
+    display: flex;                            /* Flexbox pro horizontální rozložení */
+    justify-content: space-between;           /* Rozložení prvků na kraje */
+    align-items: center;                      /* Vertikální zarovnání na střed */
+    max-width: 100%;                          /* Šířka nav až do 100 % */
+    margin: 0 auto;                           /* Vycentrování */
+    padding: 0 50px;                          /* Vnitřní odsazení po stranách */
+}
+
+/* Logo v navigaci */
+.nav__logo{
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;                      /* Větší text loga */
+    text-decoration: none;
+    color: #D2691E;    
+}
+
+/* Ikona v logu */
+.nav__logo i {
+    margin-right: 10px;
+}
+
+/* Kontejner pro menu */
+.nav__menu{
+    display: flex;
+}
+
+/* Seznam položek menu */
+.nav__list{
+    display: flex;
+    list-style: none;
+    align-items: center;    
+}
+
+/* Jednotlivé položky seznamu */
+.nav li{
+    padding: 50px;                          /* Větší klikací plocha */
+}
+
+/* Styl pro odkazy v navigaci */
+.nav a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+/* Hover efekt pro odkazy */
+.nav__link:hover{
+    color: #D2691E;
+}
+
+/* Tlačítko - společný styl pro .button i .btn */
+.button, .btn{
+    display: inline-flex;
+    background: #D2691E;
+    color: whitesmoke;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    transition: box-shadow .4s;
+    border-radius: 20px;
+}
+
+/* Hover efekt */
+.button:hover{
+    box-shadow: 0 8px 32px #D2691E;
+    color: whitesmoke;
+}
+
+/* Hover efekt */
+.btn:hover{
+    box-shadow: 0 8px 32px #D2691E;
+    background: #D2691E;   
+}
+
+/* Třída pro zobrazení menu */
+.show-menu{
+    right: 0;
+}
+
+
+/* == Potrubí&montage == */
+/* Sekce s obrázkovým pozadí */
+.imgpozadi{
+    background-image: url(images/_9b961aaf-2164-4209-9015-13d4f0fe5167.jfif); 
+    background-size: cover;
+    background-repeat: no-repeat;   /* Zabránění opakování obrázku */
+    height: 100vh;                  /* Výška na celou výšku okna(viewport height) */
+            display: flex;
+            justify-content: center;
+            align-items: center;  
+}
+
+/* Hlavní nadpis uprostřed obrázku */
+.nadpis h1{    
+    color: #D2691E;
+    font-size: calc(1.5rem + 8vw); /* Responsivní velikost nadpisu */
+            text-align: center;     
+}
+
+/* druhý nadpis v jiné sekci */
+.druhej_popis h1{
+    font-size: 50px;
+}
+
+/* Popisný text pod druhým nadpisem */
+.druhej_popis p{
+    font-size: 20px;
+}
+
+/* == Sekce About == */
+
+/* Styl pro <span> prvky uvnitř .about – zvýraznění klíčových slov */
+.about span{
+    color: #000;
+}
+
+/* Kontejner sekce "About" */
+.about_container{
+    margin: 5%;     /* Vnější odsazení od okrajů stránky */
+    row-gap: 8rem;    /* Mezera mezi řádky (např. v gridu nebo flexboxu) */
+}
+
+/* Nadpis podsekce (např. „O mně“) */
+.section_subtitle{        
+    color: #D2691E;       
+}
+
+/* Textové zarovnání obsahu (např. popis nebo nadpis) */
+.about_data{
+    text-align: center;
+}
+
+/* Odstavec s popisem */
+.about_description{
+    margin-bottom: 4rem; /* Spodní mezera pro oddělení od následujících prvků */
+}
+
+/* Seznam dovedností / vlastností */
+.about_list{    
+    display: flex;
+    flex-wrap: wrap;            /* přetékající položky se zalomí */
+    justify-content: center;
+    gap: 20px;                  /* mezera mezi položkami */
+    padding: 0;                 /* odstranění vnitřního odsazení */
+}
+
+/* Jednotlivá položka v seznamu (např. dovednost) */
+.about_list-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    height: 150px;
+    width: 250px;
+    border-radius: 15%;     /* zaoblení rohů */
+    margin: 50px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);     /* Jemný stín pro 3d efekt */
+}
+
+/* Ikonka  */
+.ri-checkbox-circle-line{
+    margin-right: 8px;   /* Odsazení ikony od textu */
+}
+
+/* Odsazení kolem tlačítka ve spodní části sekce */
+.button-around{
+    margin: 4%;
+}
+
+/* Hlavní nadpis sekce */
+.section_title{
+    color: black;
+    margin: 2%;
+}
+
+/* Pozadí textového bloku (např. popis o mně) */
+.about_text{
+    background-color: whitesmoke;
+    padding: 2%;      /* Vnitřní odsazení obsahu od okrajů boxu */
+} 
+
+/* == Sekce Projects == */
+
+/* Kontejner celé sekce s projekty */
+.projects_container{
+    margin-top: 2%; /* Vnější horní mezera pro oddělení od předchozí sekce */
+}
+
+/* Obrázek jednotlivého projektu */
+.project_img{
+    height: 550px;
+    width: 350px;
+}
+
+/* Flexbox skupina pro uspořádání více projektů vedle sebe */
+.couple{
+    display: flex;      /* Flexbox pro horizontální uspořádání */
+    flex-wrap: wrap;    /* Zalomení obsahu na více řádků */
+    justify-content: center;    /* Zarovnání do středu */
+    gap: 20px;                  /* Mezera mezi kartami */
+    padding: 0;                 /* Bez vnitřního odsazení */
+}
+
+/* Karta projektu (obsahuje obrázek, název, popis...) */
+.project_card{     
+    background-color: black;
+    padding: 2%;                    /* Vnitřní odsazení */
+    margin: 20px;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.3);         /* 3D efekt stínu */
+}
+
+/* Styl pro text uvnitř karty (název, popis, doplňky) */
+.project_card p,
+.project_card h2,  
+.project_card span{
+    color: white;   /* Bílý text pro lepší kontrast na tmavém pozadí */
+}
+
+/* Nadpis sekce */
+.section_tittle{
+    margin: 1%;
+    justify-content: center;
+    align-items: center;
+    display: flex;      /* Flexbox pro středové zarovnání nadpisu */
+}
+
+/* Podnadpis sekce (např. "Moje práce") */
+.projects .section_subtitle{
+    margin: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;    /* Zarovnání textu do středu */
+}
+
+
+
+/* == Sekce services == */
+
+.our_services{
+    margin-bottom: 3%;  /* Spodní mezera od další sekce */
+}
+
+/* == Responsive == */
+
+/* 📱 Zobrazení pro zařízení do šířky 799px (mobilní telefony) */
+@media (max-width: 799px) {
+
+    /* Padding pro sekce */
+    .section-p1{
+        padding: 40px 40px;
+    } 
+    
+    /* Navigační menu (mobilní verze) */
+    #navbar {
+        display: flex;
+        flex-direction: column;         /* Navigační odkazy pod sebe */
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;                 /* Fixní pozice na obrazovce */
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #CACFD2;      /* Světle šedé pozadí */
+        box-shadow: 0 40px 60px #000;   /* Stín pro 3D efekt */
+        padding: 80px 0 0 10px;           /* Odsazení obsahu uvnitř menu */
+        transition: 0.3s;                 /* Hladký přechod při zobrazení menu */
+    }
+
+    /* Mezery mezi položkami menu */
+    #navbar li{
+        margin-bottom: 25px;
+    }
+
+    /* Styl pro ikonu mobilního menu */
+    #mobile i {
+        color: #1a1a1a;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+    
+    /* Wrapper pro mobilní ikonu */
+    #mobile{        
+        display: none;      /* Ve výchozím stavu skryto */
+        align-items: center;        
+    }
+
+    /* Tlačítko pro zavření menu */
+    #close{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 24px;
+    }    
+}
+
+/* 💻 Zobrazení pro zařízení do šířky 1024px (tablety, menší notebooky) */
+@media (max-width: 1024px) {
+
+    /* Úprava výšky pozadí s obrázkem */
+    .imgpozadi {
+        height: 700px; /* Přizpůsobení výšky pro tablety */
+    }
+
+    /* Úprava velikosti nadpisu v hero sekci */
+    .nadpis h1 {
+        font-size: 800%; /* Přizpůsobená velikost písma */
+        padding-top: 200px;  /* Větší horní mezera pro lepší čitelnost */
+    }
+}
+
+/* == RESPONSIVE STYLES: TABLETS & MENŠÍ NOTEBOOKY == */
+@media (max-width: 768px) {
+
+    /* Pozadí s obrázkem v sekci "hero" */
+    .imgpozadi {
+        height: 500px; /* Snížená výška pro lepší zobrazení na menších obrazovkách */
+    }
+
+    /* Hlavní nadpis v hero sekci */
+    .nadpis h1 {
+        font-size: 600%; /* Zmenšení velikosti textu */
+        padding: 150px; /* Zvětšené vnitřní odsazení */
+    }
+}
+
+/* == RESPONSIVE STYLES: MOBILY (max-width: 480px) == */
+@media (max-width: 480px) {
+
+    /* Výška hero obrázku na velmi malých obrazovkách */
+    .imgpozadi {
+        height: 200px; /* Zásadně menší výška pro mobily */
+    }
+
+    /* Nadpis na mobilních zařízeních */
+    .nadpis h1 {
+        font-size: 400%; /* Ještě menší text kvůli malé šířce displeje */
+    }
+}
+
+/* == Sekce Footer ==*/
+
+footer{    
+    display: flex;
+    flex-wrap: wrap;                /* Umožňuje zalamování jednotlivých částí footeru */
+    justify-content: space-between;     /* Rovnoměrné rozložení obsahu */
+    background-color: #222;      /* Tmavé pozadí pro kontrastní vzhled */
+}
+
+footer p{
+    color: whitesmoke;  /* Světlý text pro dobrou čitelnost */
+}
+
+/* Logo ve footeru s kulatými rohy */
+footer .alogo{
+    border-radius: 50px;
+    margin-bottom: 50px;    
+}
+
+
+/* Mezery pod hlavním logem */
+footer .logo{
+    margin-bottom: 30px;
+}
+
+/* Styl pro ikonky (např. sociální sítě) */
+footer .icon{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    height: 25px;
+    width: 25px;      
+}
+
+/* Každý sloupec ve footeru */
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 2%;
+    margin-left: 10%;
+    margin-top: 4%;    
+}
+
+/* Odkazy ve footeru */
+footer a {
+    color: whitesmoke;
+    text-decoration: none;  /*Bez podtržení */
+    margin-bottom: 15px;
+}
+
+/* Nadpisy ve footeru */
+footer h3, h4{
+    margin-bottom: 20px;
+    color: whitesmoke;
+}
+
+/* Mezera mezi ikonou a textem */
+footer i{
+    margin-right: 15px;
+}
+
+/* Hover efekt pro odkazy */
+footer a:hover{
+    text-decoration: underline;     /* Podtržení při přejetí myší */
+}
+
+/* Copyright text – vystředěný podtržítko ve spodní části */
+footer .copyright{
+    width: 100%;
+    text-align: center;
+}

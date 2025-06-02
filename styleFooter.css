@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+    font-family: "Poppins", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+ul{
+    list-style: none;
+}
+
+a{    
+    text-decoration: none;
+}
+
+/* == Sekce Footer ==*/
+
+footer{    
+    display: flex;
+    flex-wrap: wrap;                /* Umožňuje zalamování jednotlivých částí footeru */
+    justify-content: space-between;     /* Rovnoměrné rozložení obsahu */
+    background-color: #222;      /* Tmavé pozadí pro kontrastní vzhled */
+}
+
+footer p{
+    color: whitesmoke;  /* Světlý text pro dobrou čitelnost */
+}
+
+/* Logo ve footeru s kulatými rohy */
+footer .alogo{
+    border-radius: 50px;
+    margin-bottom: 50px;    
+}
+
+
+/* Mezery pod hlavním logem */
+footer .logo{
+    margin-bottom: 30px;
+}
+
+/* Styl pro ikonky (např. sociální sítě) */
+footer .icon{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    height: 25px;
+    width: 25px;      
+}
+
+/* Každý sloupec ve footeru */
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 2%;
+    margin-left: 10%;
+    margin-top: 4%;    
+}
+
+/* Odkazy ve footeru */
+footer a {
+    color: whitesmoke;
+    text-decoration: none;  /*Bez podtržení */
+    margin-bottom: 15px;
+}
+
+/* Nadpisy ve footeru */
+footer h3, h4{
+    margin-bottom: 20px;
+    color: whitesmoke;    
+}
+
+/* Mezera mezi ikonou a textem */
+footer i{
+    margin-right: 15px;
+}
+
+/* Hover efekt pro odkazy */
+footer a:hover{
+    text-decoration: underline;     /* Podtržení při přejetí myší */
+}
+
+/* Copyright text – vystředěný podtržítko ve spodní části */
+footer .copyright{
+    width: 100%;
+    text-align: center;
+}
